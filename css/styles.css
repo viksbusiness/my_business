@@ -11253,3 +11253,8 @@ p.card-text {
   padding: 0px;
   margin: 5px;
 }
+
+.page-scroll p {
+font-size:12px;
+}
+
