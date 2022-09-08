@@ -1,8 +1,3 @@
-/*!
-* Start Bootstrap - Clean Blog v6.0.7 (https://startbootstrap.com/theme/clean-blog)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
-*/
 window.addEventListener('DOMContentLoaded', () => {
     let scrollPos = 0;
     const mainNav = document.getElementById('mainNav');
@@ -27,3 +22,32 @@ window.addEventListener('DOMContentLoaded', () => {
         scrollPos = currentTop;
     });
 })
+
+var modal = document.getElementById("myModal");
+
+var img = document.getElementsByClassName("card-popup"); 
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var closebtn = document.getElementById("closebtn");
+for (var i=0; i < img.length; i++) {
+    img[i].onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+       // captionText.innerHTML = this.alt;
+    }
+};
+
+closebtn.onclick = function() { 
+   
+  modal.style.display = "none";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+   
+  modal.style.display = "none";
+}
+function close(){
+    modal.style.display = "none";
+}
