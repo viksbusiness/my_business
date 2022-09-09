@@ -51,3 +51,6 @@ span.onclick = function() {
 function close(){
     modal.style.display = "none";
 }
+
+
+
